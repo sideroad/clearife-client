@@ -1,0 +1,159 @@
+
+            <!-- create task dialog -->
+            <div id="create_task_dialog" class="dialog">
+                <div class="item" >
+                    Title
+                </div>
+                <div class="longvalue" >
+                    <input id="create_task_title" name="create_task_title" type="text" maxlength="40" title="Input task name. over than 1 length and less than 20 length." class="longtext" />
+                </div>
+                <div class="item" >
+                    Team
+                </div>
+                <div class="longvalue" >
+                    <select id="create_task_team" name="create_task_team" class="select_team" >
+                        <option value="" >-- No team --</option>
+                    </select>
+                </div>
+                <div class="item" >
+                    Detail
+                </div>
+                <div class="longvalue" >
+                    <textarea id="create_task_detail" name="create_task_detail" ></textarea>
+                </div>
+                <div class="item" >
+                    Begin
+                </div>
+                <div class="longvalue" >
+                    <input id="create_task_begin" name="create_task_begin" style="ime-mode:disabled"  class="paralleldatepicker" type="text" title="Set today's date ,when you omitted input or select on calendar. exp. 12/31/2000" />
+                </div>
+                <div class="item" >
+                    Due
+                </div>
+                <div class="longvalue" >
+                    <input id="create_task_due" name="create_task_due" style="ime-mode:disabled" class="paralleldatepicker" type="text" title="Set begin's date ,when you omitted input or select on calendar. exp. 12/31/2000" />
+                </div>
+                <div class="item state done results" >
+                    Finish
+                </div>
+                <div class="value state done results" >
+                    <input id="create_task_finish" name="create_task_finish" style="ime-mode:disabled" class="paralleldatepicker" type="text" title="Set due's date ,when you omitted input or select on calendar. exp. 12/31/2000" />
+                </div>
+                <div class="item" >
+                    Remind
+                </div>
+                <div class="longvalue" >
+                    <p>
+                        <input id="create_task_remind_on"  type="radio" name="create_task_remind" class="create_task_remind_on" /><label for="create_task_remind_on"  >Yes</label>&nbsp;&nbsp;&nbsp;
+                        <input id="create_task_remind_off" type="radio" name="create_task_remind" class="create_task_remind_off" checked="true" /><label for="create_task_remind_off" >No</label>
+                    </p>
+                    <fieldset class="remind_set">
+                        <p>
+                            <input id="create_task_remind_date" name="create_task_remind_date" style="ime-mode:disabled" class="paralleltimestomper" type="text" title="Set remind date ,if you want input or select on calendar. exp. 12/31/2000" />
+                        </p>
+                        <p>
+                            <input id="create_task_remind_to"   name="create_task_remind_to" type="text" class="mailAddress" />
+                        </p>
+                    </fieldset>
+                </div>
+                <div class="line">
+                    <input id="create_task_button" type="button" value="Create" class="toggle create_task" />
+                    <input id="save_task_button" type="button" value="Save" class="toggle edit_task" />
+                    <input type="button" value="Cancel" class="close_button" />
+                </div>
+            </div>
+            
+            
+            <!-- entrust task dialog-->
+            <div id="entrust_task_dialog" class="dialog">
+                <div class="item">
+                    Entrust Task
+                </div>
+                <div class="value task_titles">
+                </div>
+                <div class="item">
+                    To
+                </div>
+                <div class="value">
+                    <select id="entrust_to_select"><option></option></select>
+                </div>
+                <div class="line">
+                    <input id="entrust_task_button" type="button" value="Entrust" />
+                    <input type="button" value="Cancel" class="close_button" />
+                </div>
+            </div>
+            
+            <!-- undertake task dialog-->
+            <div id="undertake_task_dialog" class="dialog">
+                <div class="item">
+                    Undertake Task
+                </div>
+                <div class="value task_titles">
+                </div>
+                <div class="line">
+                    <input id="undertake_task_button" type="button" value="Undertake" />
+                    <input type="button" value="Cancel" class="close_button" />
+                </div>
+            </div>
+            
+            <!-- send task dialog-->
+            <div id="send_task_dialog" class="dialog">
+                <div class="item">
+                    Send Email Task
+                </div>
+                <div class="value task_titles">
+                </div>
+                <div class="item">
+                    To
+                </div>
+                <div class="longvalue">
+                    <input id="send_task_to" name="send_task_to" type="text" class="mailAddress" />
+                </div>
+                <div class="item">
+                    Note
+                </div>
+                <div class="value">
+                    <textarea id="send_task_note" name="send_task_note" ></textarea>
+                </div>
+                <div class="line">
+                    <input id="send_task_button" type="button" value="Send Email" />
+                    <input type="button" value="Cancel" class="close_button" />
+                </div>
+            </div>
+            
+            <!-- list task dialog-->
+            <div id="list_task_dialog" class="dialog">
+                <table id="list_task_table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+                <div class="line">
+                    <input type="button" value="Close" class="doMethod-close_dialog" />
+                </div>
+            </div>
+            
+            <!-- list team task dialog-->
+            <div id="list_team_task_dialog" class="dialog">
+                <table id="list_team_task_table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+                <div class="line">
+                    <input type="button" value="Close" class="close_button" />
+                </div>
+            </div>
+                   
+            
+            <!-- more buttons -->
+            <div id="future_more" class="more" > 
+                <input id="future_more_button" class="exec-load_task-state=future" type="button" value="More" style="width:140px;height:51px;font-weight:bold;" />
+            </div>
+            <div id="current_more" class="more" > 
+                <input id="current_more_button" class="exec-load_task-state=current" type="button" value="More" style="width:140px;height:51px;font-weight:bold;" />
+            </div>
+            <div id="results_more" class="more" > 
+                <input id="results_more_button" class="exec-load_task-state=results" type="button" value="More" style="width:140px;height:51px;font-weight:bold;" />
+            </div>
+            <div id="trash_more" class="more" > 
+                <input id="trash_more_button" class="exec-load_task-state=trash" type="button" value="More" style="width:140px;height:51px;font-weight:bold;" />
+            </div>

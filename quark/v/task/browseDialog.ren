@@ -1,0 +1,46 @@
+<!-- browse task dialog-->
+<div id="task-browseDialog" >
+    <div class="item">
+        Title
+    </div>
+    <div id="browse_task_title" class="longvalue">${title}</div>
+    <div class="item">
+        Team
+    </div>
+    <div class="longvalue">
+        <div style="float:left;" class="ui-widget-content">
+            <img id="browse_task_team_img" src="img/team/${team_id}.png" alt="Team Image" width="20" height="20" />
+        </div>
+        <div id="browse_task_team" style="float:left;">
+        </div>
+    </div>
+    <div class="item">
+        Detail
+    </div>
+    <div id="browse_task_detail" class="longvalue">${detail}</div>
+    <div class="item">
+        Begin
+    </div>
+    <div id="browse_task_begin" class="longvalue">${begin}</div>
+    <div class="item">
+        Due
+    </div>
+    <div id="browse_task_due" class="longvalue">${due}</div>
+    <div class="item state done results">
+        Finish
+    </div>
+    <div id="browse_task_finish" class="value state done results">
+    </div>
+    <div class="item remind_set state someday definite tomorrow todo doing done results" style="display:none;">
+        Remind
+    </div>
+    <div class="longvalue remind_set state someday definite tomorrow todo doing done results">
+        <p id="browse_task_remind_time" class="longvalue">
+        </p>
+        <p id="browse_task_remind_to" class="longvalue">
+        </p>
+    </div>
+    <div class="line">
+        <input id="edit_task_button" type="button" value="Edit" class="state someday definite tomorrow todo doing done results" /><input id="delete_task_button" type="button" value="Delete" class="state someday definite tomorrow todo doing done results" /><input id="replicate_task_button" type="button" value="Copy" class="state someday definite tomorrow todo doing done results" /><input id="put_back_task_button" type="button" value="Put Back" class="state trash" /><input id="erase_task_button" type="button" value="Erase" class="state trash" /><input id="open_entrust_task_dialog_button" type="button" value="Entrust" class="state someday definite tomorrow todo doing" /><input id="open_send_task_dialog_button" type="button" value="Email" /><input type="button" value="Close" class="close_button" />
+    </div>
+</div>

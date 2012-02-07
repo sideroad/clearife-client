@@ -1,0 +1,9 @@
+<div id="task-someday" class="lane_contents">
+	${this}.each({
+	<div id="${id}" class="task">
+	    <div class="title">
+	        ${title}
+	    </div>
+	</div>
+	})
+</div>

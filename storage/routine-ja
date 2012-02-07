@@ -1,0 +1,110 @@
+
+            <!-- create routine dialog -->
+            <div id="create_routine_dialog" class="dialog"> 
+                <div class="item" >
+                    タイトル
+                </div>
+                <div class="longvalue" >
+                    <input id="routine_title" name="routine_title" type="text" maxlength="40" title="Input routine name. over than 1 length and less than 20 length." class="longtext" />
+                </div>
+                <div class="item" >
+                    チーム
+                </div>
+                <div class="longvalue" >
+                    <select id="routine_team" name="routine_team" class="select_team" >
+                        <option value="" >-- No team --</option>
+                    </select>
+                </div>
+                <div class="item" >
+                    詳細
+                </div>
+                <div class="longvalue" >
+                    <textarea id="routine_detail" name="routine_detail" ></textarea>
+                </div>
+                <div class="item" >
+                    期間
+                </div>
+                <div class="longvalue" >
+                    <input id="routine_base" name="routine_base" style="ime-mode:disabled" type="text" class="datepicker" title="Input or select on calendar.Its routine base date. exp. 12/31/2000" />-
+                    <input id="routine_end" name="routine_end" style="ime-mode:disabled" type="text" class="datepicker" title="Input or select on calendar.Its routine base date. exp. 12/31/2000" />
+                </div>
+                <div class="item" >
+                    種別
+                </div>
+                <div class="longvalue" >
+                    <p><input id="interval_radio" name="routine_type" type="radio" value="interval" class="toggle-type_information" checked /><label for="interval_radio">Interval</label></p>
+                    <p><input id="weekday_radio" name="routine_type" type="radio" value="weekday" class="toggle-type_information" /><label for="weekday_radio">Weekday</label></p>
+                    <p><input id="month_radio" name="routine_type" type="radio" value="month" class="toggle-type_information" /><label for="month_radio">Every month</label></p>
+                    <p><input id="year_radio" name="routine_type" type="radio" value="year" class="toggle-type_information" /><label for="year_radio">Every year</label></p>
+                </div>
+                <div id="interval_routine" class="type_information interval_radio_toggle" >
+                    <div class="item" >
+                        間隔を置く日数は？
+                    </div>
+                    <div class="longvalue" >
+                        <input id="routine_interval" name="routine_interval" style="ime-mode:disabled" type="text" title="Only a number between 1 and 6 is allowed. exp. 1" />
+                    </div>
+                </div>
+                <div id="weekday_routine" class="type_information weekday_radio_toggle" >
+                    <div class="item" >
+                        何週目？
+                    </div>
+                    <div class="longvalue" >
+                        <div class="value2column" >
+                            <p><input id="first_week_check" name="routine_week" type="checkbox" value="0" /><label for="first_week_check">第一週</label></p>
+                            <p><input id="second_week_check" name="routine_week" type="checkbox" value="1" /><label for="second_week_check">第二週</label></p>
+                            <p><input id="third_week_check" name="routine_week" type="checkbox" value="2" /><label for="third_week_check">第三週</label></p>
+                        </div>
+                        <div class="value2column" >
+                            <p><input id="fourth_week_check" name="routine_week" type="checkbox" value="3" /><label for="fourth_week_check">第四週</label></p>
+                            <p><input id="fifth_week_check" name="routine_week" type="checkbox" value="4" /><label for="fifth_week_check">第五週</label></p>
+                        </div>
+                    </div>
+                    <div class="item" >
+                        曜日は？
+                    </div>
+                    <div class="longvalue" >
+                        <div class="value2column" >
+                            <p><input id="sun_check" name="routine_weekday" type="checkbox" value="0" /><label for="sun_check">日曜日</label></p>
+                            <p><input id="mon_check" name="routine_weekday" type="checkbox" value="1" /><label for="mon_check">月曜日</label></p>
+                            <p><input id="tue_check" name="routine_weekday" type="checkbox" value="2" /><label for="tue_check">火曜日</label></p>
+                            <p><input id="wed_check" name="routine_weekday" type="checkbox" value="3" /><label for="wed_check">水曜日</label></p>
+                        </div>
+                        <div class="value2column" >
+                            <p><input id="thu_check" name="routine_weekday" type="checkbox" value="4" /><label for="thu_check">木曜日</label></p>
+                            <p><input id="fri_check" name="routine_weekday" type="checkbox" value="5" /><label for="fri_check">金曜日</label></p>
+                            <p><input id="sat_check" name="routine_weekday" type="checkbox" value="6" /><label for="sat_check">土曜日</label></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="month_routine" class="type_information month_radio_toggle" >
+                            <div class="item" >
+                        日にち
+                    </div>
+                    <div class="longvalue" >
+                        <input id="routine_day" name="routine_day" style="ime-mode:disabled" type="text" title="Only a number between 1 and 31 is allowed. exp. 1" />
+                    </div>
+                </div>
+                <div id="year_routine" class="type_information year_radio_toggle" >
+                    <div class="item" >
+                        月と日にち
+                    </div>
+                    <div class="longvalue" >
+                        <input id="routine_month_day" name="routine_month_day" style="ime-mode:disabled" type="text" title="Please input month/day. exp. 1/1" />
+                    </div>
+                </div>
+                <div class="line">
+                    <input id="create_routine_button" type="button" value="作成" class="exec-create_routine create_routine" />
+                    <input id="edit_routine_button" type="button" value="保存" class="exec-edit_routine edit_routine" />
+                    <input id="erase_routine_button" type="button" value="消去" class="exec-erase_routine edit_routine" />
+                    <input type="button" value="キャンセル" class="doMethod-close_dialog create_routine edit_routine" />
+                </div>
+            </div>
+            
+            <!-- default routine-->
+            <div id="default_routine" class="routine purple">
+                <div class="title">
+                </div>
+                <div class="team_image">
+                </div>
+            </div>

@@ -1,0 +1,9 @@
+<div id="task-doing" class="lane_contents" data-quark-event="drop:task.move" >
+	${this}.each({
+	<div id="${id}" class="task" data-quark-event="click:task.browseDialog?ids=${id}" draggable="true" >
+	    <div class="title">
+	        ${title}
+	    </div>
+	</div>
+	})
+</div>

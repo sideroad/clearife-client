@@ -1,0 +1,17 @@
+<!-- browse user dialog -->
+<div id="browse_user_dialog" >
+    <div class="center_line">
+        <div class="ui-widget-content browse_user_image">
+            <img id="browse_user_image" src="./img/users/${user_seq_img}.png" alt="User Image" />
+        </div>
+        <div id="browse_user_profile" class="ui-widget-content ui-corner-right browse_user_profile">${profile}</div>
+    </div>
+    <div class="line">
+        <input id="request_friend_button" type="button" value="Friend Request" class="user_list" />
+		<input id="accept_friend_button" type="button" value="Accept to friend" class="accept_list" />
+		<input id="deny_friend_button" type="button" value="Deny to friend" class="accept_list friend_list" />
+		<input id="remove_friend_team_button" type="button" value="Remove" class="create_team_member_list" />
+		<input type="button" value="Send Message" class="send_message_button user_list accept_list friend_list create_team_member_list" />
+		<input type="button" value="Close" class="close_button user_list accept_list friend_list create_team_member_list" />
+    </div>
+</div>

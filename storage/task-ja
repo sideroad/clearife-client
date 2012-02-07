@@ -1,0 +1,220 @@
+
+            <!-- create task dialog -->
+            <div id="create_task_dialog" class="dialog">
+                <div class="item" >
+                    タイトル
+                </div>
+                <div class="longvalue" >
+                    <input id="create_task_title" name="create_task_title" type="text" maxlength="40" title="Input task name. over than 1 length and less than 20 length." class="longtext" />
+                </div>
+                <div class="item" >
+                    チーム
+                </div>
+                <div class="longvalue" >
+                    <select id="create_task_team" name="create_task_team" class="select_team" >
+                        <option value="" >-- No team --</option>
+                    </select>
+                </div>
+                <div class="item" >
+                    詳細
+                </div>
+                <div class="longvalue" >
+                    <textarea id="create_task_detail" name="create_task_detail" ></textarea>
+                </div>
+                <div class="item" >
+                    開始日
+                </div>
+                <div class="longvalue" >
+                    <input id="create_task_begin" name="create_task_begin" style="ime-mode:disabled"  class="paralleldatepicker" type="text" title="Set today's date ,when you omitted input or select on calendar. exp. 12/31/2000" />
+                </div>
+                <div class="item" >
+                    期日
+                </div>
+                <div class="longvalue" >
+                    <input id="create_task_due" name="create_task_due" style="ime-mode:disabled" class="paralleldatepicker" type="text" title="Set begin's date ,when you omitted input or select on calendar. exp. 12/31/2000" />
+                </div>
+                <div class="item state done results" >
+                    完了日
+                </div>
+                <div class="value state done results" >
+                    <input id="create_task_finish" name="create_task_finish" style="ime-mode:disabled" class="paralleldatepicker" type="text" title="Set due's date ,when you omitted input or select on calendar. exp. 12/31/2000" />
+                </div>
+                <div class="item" >
+                    リマインド
+                </div>
+                <div class="longvalue" >
+                    <p>
+                        <input id="create_task_remind_on"  type="radio" name="create_task_remind" class="create_task_remind_on" /><label for="create_task_remind_on"  >する</label>&nbsp;&nbsp;&nbsp;
+                        <input id="create_task_remind_off" type="radio" name="create_task_remind" class="create_task_remind_off" checked="true" /><label for="create_task_remind_off" >しない</label>
+                    </p>
+                    <fieldset class="remind_set">
+                        <p>
+                            <input id="create_task_remind_date" name="create_task_remind_date" style="ime-mode:disabled" class="paralleltimestomper" type="text" title="Set remind date ,if you want input or select on calendar. exp. 12/31/2000" />
+                        </p>
+                        <p>
+                            <input id="create_task_remind_to"   name="create_task_remind_to" type="text" class="mailAddress" />
+                        </p>
+                    </fieldset>
+                </div>
+                <div class="line">
+                    <input id="create_task_button" type="button" value="作成" class="toggle create_task" />
+                    <input id="save_task_button" type="button" value="保存" class="toggle edit_task" />
+                    <input type="button" value="キャンセル" class="close_button" />
+                </div>
+            </div>
+            
+            <!-- browse task dialog-->
+            <div id="browse_task_dialog" class="dialog">
+                <div class="item" >
+                    タイトル
+                </div>
+                <div id="browse_task_title" class="longvalue" >
+                </div>
+                <div class="item" >
+                    チーム
+                </div>
+                <div class="longvalue" >
+                    <div style="float:left;" class="ui-widget-content" ><img id="browse_task_team_img" src="img/team/0.png" alt="Team Image" width="20" height="20" /></div>
+                    <div id="browse_task_team" style="float:left;" ></div>
+                </div>
+                <div class="item" >
+                    詳細
+                </div>
+                <div id="browse_task_detail" class="longvalue" >
+                </div>
+                <div class="item" >
+                    開始日
+                </div>
+                <div id="browse_task_begin" class="longvalue" >
+                </div>
+                <div class="item" >
+                    期日
+                </div>
+                <div id="browse_task_due" class="longvalue" >
+                </div>
+                <div class="item state done results" >
+                    完了日
+                </div>
+                <div id="browse_task_finish" class="value state done results" >
+                </div>
+                <div class="item remind_set state someday definite tomorrow todo doing done results" style="display:none;" >
+                    リマインド
+                </div>
+                <div class="longvalue remind_set state someday definite tomorrow todo doing done results" >
+                    <p id="browse_task_remind_time" class="longvalue" >
+                    </p>
+                    <p id="browse_task_remind_to"   class="longvalue" >
+                    </p>
+                </div>
+                <div class="line">
+                    <input id="edit_task_button" type="button" value="変更" class="state someday definite tomorrow todo doing done results" />
+                    <input id="delete_task_button" type="button" value="削除" class="state someday definite tomorrow todo doing done results" />
+                    <input id="replicate_task_button" type="button" value="複製" class="state someday definite tomorrow todo doing done results" />
+                    <input id="put_back_task_button" type="button" value="元に戻す" class="state trash" />
+                    <input id="erase_task_button" type="button" value="消去" class="state trash" />
+                    <input id="open_entrust_task_dialog_button" type="button" value="委譲" class="state someday definite tomorrow todo doing" />
+                    <input id="open_send_task_dialog_button" type="button" value="Eメール" />
+                    <input type="button" value="閉じる" class="close_button" />
+                </div>
+            </div>
+            
+            <!-- entrust task dialog-->
+            <div id="entrust_task_dialog" class="dialog">
+                <div class="item">
+                    タスクを委譲する
+                </div>
+                <div class="value task_titles">
+                </div>
+                <div class="item">
+                    宛先
+                </div>
+                <div class="value">
+                    <select id="entrust_to_select"><option></option></select>
+                </div>
+                <div class="line">
+                    <input id="entrust_task_button" type="button" value="委譲" />
+                    <input type="button" value="キャンセル" class="close_button" />
+                </div>
+            </div>
+            
+            <!-- undertake task dialog-->
+            <div id="undertake_task_dialog" class="dialog">
+                <div class="item">
+                    タスクを引受ける
+                </div>
+                <div class="value task_titles">
+                </div>
+                <div class="line">
+                    <input id="undertake_task_button" type="button" value="引受" />
+                    <input type="button" value="キャンセル" class="close_button" />
+                </div>
+            </div>
+            
+            <!-- send task dialog-->
+            <div id="send_task_dialog" class="dialog">
+                <div class="item">
+                    タスク内容をEメールに送る
+                </div>
+                <div class="value task_titles">
+                </div>
+                <div class="item">
+                    宛先(Eメールアドレス)
+                </div>
+                <div class="longvalue">
+                    <input id="send_task_to" name="send_task_to" type="text" class="mailAddress" />
+                </div>
+                <div class="item">
+                    備考
+                </div>
+                <div class="value">
+                    <textarea id="send_task_note" name="send_task_note" ></textarea>
+                </div>
+                <div class="line">
+                    <input id="send_task_button" type="button" value="送信する" />
+                    <input type="button" value="キャンセル" class="close_button" />
+                </div>
+            </div>
+            
+            <!-- list task dialog-->
+            <div id="list_task_dialog" class="dialog">
+                <table id="list_task_table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+                <div class="line">
+                    <input type="button" value="閉じる" class="doMethod-close_dialog" />
+                </div>
+            </div>
+            
+            <!-- list team task dialog-->
+            <div id="list_team_task_dialog" class="dialog">
+                <table id="list_team_task_table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+                <div class="line">
+                    <input type="button" value="閉じる" class="close_button" />
+                </div>
+            </div>
+                   
+            <!-- default task-->
+            <div id="default_task" class="task">
+                <div class="title">
+                </div>
+                <div class="team_image">
+                </div>
+            </div>
+            
+            <!-- more buttons -->
+            <div id="future_more" class="more" > 
+                <input id="future_more_button" class="exec-load_task-state=future" type="button" value="More" style="width:140px;height:51px;font-weight:bold;" />
+            </div>
+            <div id="current_more" class="more" > 
+                <input id="current_more_button" class="exec-load_task-state=current" type="button" value="More" style="width:140px;height:51px;font-weight:bold;" />
+            </div>
+            <div id="results_more" class="more" > 
+                <input id="results_more_button" class="exec-load_task-state=results" type="button" value="More" style="width:140px;height:51px;font-weight:bold;" />
+            </div>
+            <div id="trash_more" class="more" > 
+                <input id="trash_more_button" class="exec-load_task-state=trash" type="button" value="More" style="width:140px;height:51px;font-weight:bold;" />
+            </div>

@@ -1,0 +1,25 @@
+<!-- login user dialog -->
+<div id="user-loginDialog">
+    <form id="user-login-form">
+        <div class="item">
+            UserID
+        </div>
+        <div class="value">
+            <input id="user_id" name="user_id" type="text" style="ime-mode:disabled" data-quark-event="enter:user.login:form" />
+        </div>
+        <div class="item">
+            Password
+        </div>
+        <div class="value">
+            <input id="user_password" name="user_password" type="password" style="ime-mode:disabled" data-quark-event="enter:user.login:form" />
+        </div>
+        <div class="line">
+            <input id="login_button" type="button" value="Login" data-quark-event="click:user.login:form" />
+			<input id="open_user_register_button" type="button" value="Sign Up" data-quark-event="click:user.registerDialog" />
+			<input type="button" value="Cancel" data-quark-event="click:user.closeLoginDialog" />
+        </div>
+        <div class="line">
+            <a href="help.html">What is clearife?</a>
+        </div>
+    </form>
+</div>

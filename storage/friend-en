@@ -1,0 +1,31 @@
+
+            <!-- friend dialog -->
+            <div id="friend_dialog" class="dialog">
+                <div class="center_line" >
+                    <input id="search_user_nickname" name="search_user_nickname" type="text" maxlength="20" title="Input user nickname." />
+                    <input id="search_user_button" type="button" value="Search User" class="exec-search_user" />
+                    <input id="list_friend_button" type="button" value="Your Friend" class="doMethod-list_friend search_user" />
+                    <input type="button" value="Close" class="doMethod-close_dialog" />
+                </div>
+                <div class="left_line" >
+                    <h3 class="list_friend" >Your Friends</h3>
+                    <h3 class="search_user" >Search User</h3>
+                </div>
+                <div id="friend_list" class="junk_box list_friend ui-widget-content ui-corner-all" >
+                </div>
+                <div id="user_list" class="junk_box search_user ui-widget-content ui-corner-all" >
+                </div>
+            </div>
+            
+            
+            <!-- accept friend dialog -->
+            <div id="accept_friend_dialog" class="dialog">
+                <div class="left_line" >
+                    <h3 class="list_accept" >Waiting for your accept list</h3>
+                </div>
+                <div id="accept_list" class="junk_box list_accept ui-widget-content ui-corner-all" >
+                </div>
+                <div class="line">
+                    <input type="button" value="Close" class="doMethod-close_dialog" />
+                </div>
+            </div>

@@ -1,0 +1,32 @@
+
+            <!-- create address dialog -->
+            <div id="create_address_dialog" class="dialog">
+                <div class="item" >
+                    Name
+                </div>
+                <div class="longvalue" >
+                    <input id="create_address_name" name="create_address_name" type="text" maxlength="20" />
+                </div>
+                <div class="item" >
+                    Address
+                </div>
+                <div class="longvalue" >
+                    <input id="create_address_address" name="create_address_address" type="text" maxlength="70" class="verylongtext" />
+                </div>
+                <div class="line">
+                    <input id="create_address_button" type="button" value="Create" class="create_address_button create_address" />
+                    <input id="save_address_button" type="button" value="Save" class="edit_address_button edit_address" />
+                    <input id="cancel_address_button" type="button" value="Cancel" class="close_button" />
+                </div>
+            </div>
+                        
+            <!-- list address dialog-->
+            <div id="list_address_dialog" class="dialog">
+                <table id="list_address_table" class="list_address_table" >
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+                <div class="line">
+                    <input type="button" value="Cancel" class="exec-close_dialog" />
+                </div>
+            </div>

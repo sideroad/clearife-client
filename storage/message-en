@@ -1,0 +1,62 @@
+
+            <!-- send message dialog -->
+            <div id="send_message_dialog" class="dialog">
+                <div class="item" >
+                    To
+                </div>
+                <div class="longvalue" >
+                    <select id="send_message_to_select" name="send_message_to_select" class="select_friend send_message_receive_id" >
+                        <option value="" >-- No Friend --</option>
+                    </select>
+                    <span class="send_message_receive_id" ></span>
+                    <input id="send_message_to_hidden" name="send_message_to_hidden" class="send_message_receive_id" type="hidden" />
+                    <input id="send_message_gr_hidden" name="send_message_gr_hidden" class="send_message_team_id" type="hidden" />
+                </div>
+                <div class="item" >
+                    Subject
+                </div>
+                <div class="longvalue" >
+                    <input id="send_message_subject" name="send_message_subject" type="text" maxlength="70" class="verylongtext send_message_subject" />
+                </div>
+                <div class="item" >
+                    Message
+                </div>
+                <div class="longvalue" >
+                    <textarea id="send_message_message" name="send_message_message" class="send_message_message" ></textarea>
+                </div>
+                <div class="line">
+                    <input id="send_message_button" type="button" value="Send" class="send_message_button" />
+                    <input id="cancel_message_button" type="button" value="Cancel" class="close_button" />
+                </div>
+            </div>
+            
+            <!-- message box dialog -->
+            <div id="message_box_dialog" class="dialog">
+                <div class="longitem" >
+                    <div><span class="doMethod-open_send_message_dialog" ><img src="/img/send_message_icon.png" alt="New" /></span></div>
+                    <div><span class="doMethod-list_inbox_box" ><img src="/img/inbox_icon.png" alt="Inbox" /></span></div>
+                    <div><span class="doMethod-list_sent_box" ><img src="/img/sent_icon.png" alt="Sent" /></span></div>
+                </div>
+                <div class="longvalue" >
+                    <div id="list_inbox_box_div" class="message_box" >
+                        <table id="list_inbox_box_table" class="list_inbox_box_table" >
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div id="list_sent_box_div" class="message_box" >
+                        <table id="list_sent_box_table" class="list_sent_box_table" >
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div id="browse_message_message" class="ui-widget-content ui-corner-bottom">
+                        <div style="text-align:center">Got your eye on one of those messages up there?<br/>
+                        To view your message down here in this handy Reading Pane, just click on it.
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <input type="button" value="Cancel" class="doMethod-close_dialog" />
+                </div>
+            </div>

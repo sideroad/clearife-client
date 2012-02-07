@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta name="description" content="clearife is clear your task, schedule, work and life that approached by GTD." />
+        <meta name="keywords" content="clearife,GTD,Getting Things Done,task,work,schedule,life,sideroad,timeline" />
+
+        <link rel="shortcut icon" href="/clearife/favicon.ico" type="image/vnd.microsoft.icon" />
+        <link rel="icon" href="/clearife/favicon.ico" type="image/vnd.microsoft.icon" />
+        <link id="default_style" rel="stylesheet" type="text/css" href="/css/redmond/jquery-ui-1.7.1.custom.css" />
+        <link id="ui_style" rel="stylesheet" type="text/css" href="/css/redmond/jquery-ui-1.7.1.custom.css" />
+        <link rel="stylesheet" type="text/css" href="./css/timeline.css" />
+        <link rel="stylesheet" type="text/css" href="/clearife/css/clearife.css" />
+        <link rel="stylesheet" type="text/css" href="/css/flexigrid/flexigrid.css" />
+        <link rel="stylesheet" type="text/css" href="/css/passroids.css" />
+        <link rel="stylesheet" type="text/css" href="/css/floating-message.css" />
+        <title>Timeline - clearife</title>
+        <script type="text/javascript" src="/js/jquery.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="/js/flexigrid.js"></script>
+        <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="/js/jquery.tooltip.js"></script>
+        <script type="text/javascript" src="/js/jQueryRotate.js"></script>
+        <script type="text/javascript" src="/js/ajaxfileupload.js"></script>
+        <script type="text/javascript" src="/js/jquery.passroids.js"></script>
+        <script type="text/javascript" src="/js/jquery.floatingmessage.js"></script>
+        <script type="text/javascript" src="/js/sideroad.js"></script>
+        <script type="text/javascript" src="/js/timeline.js"></script>
+        <script src="http://static.simile.mit.edu/timeline/api-2.3.0/timeline-api.js?bundle=true" type="text/javascript"></script>
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            try {
+                var pageTracker = _gat._getTracker("UA-7694028-4");
+                pageTracker._trackPageview();
+            } catch(err) {}
+		</script>
+    </head>
+    <body>
+        <div id="head" class="ui-widget ui-widget-content ui-corner-bottom" >
+            <div id="head_left">
+                <div id="title" >
+                    <h1><a href="/clearife/" ><img border="0" alt="clearife" src="/clearife/img/title.png" /></a></h1>
+                </div>
+            </div>
+            <div id="head_right">
+                <div id="user_information" class="ui-widget-content ui-corner-top ui-corner-br" >
+                    <div id="user_information_head" class="ui-dialog-titlebar ui-widget-header ui-corner-top ui-helper-clearfix" ><span class="user_nickname" >Guest</span></div>
+                    <div id="user_information_left" class="ui-widget ui-widget-content" ><img class="user_image" src="/img/users/0.png" alt="User Image" width="100" height="100" /></div>
+                    <div id="user_information_right" class="ui-widget ui-widget-content ui-corner-br" >
+                        <div id="edit_user_div" class="user_operate" ><a id="edit_user_a" class="doMethod-open_edit_user_dialog" href="javascript:void(0);" ><img border="0" src="/clearife/img/edit.png" alt="Edit" /></a></div>
+                        <div id="login_user_div" class="user_operate" ><a id="login_user_a" class="doMethod-open_login_user_dialog" href="javascript:void(0);" ><img border="0" src="/clearife/img/login.png" alt="Login" /></a></div>
+                        <div id="logout_user_div" class="user_operate" style="display:none;" ><span id="logout_user_span" class="doMethod-logout_user" ><img border="0" src="/clearife/img/logout.png" alt="Logout" /></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="body" class="ui-widget ui-widget-content ui-corner-all" >
+            <h1>Time line</h1>
+            <div id="timeline_container">
+				<div id="my-timeline" style="height: 200px; border: 1px solid #aaa" ></div>
+				<noscript>
+				This page uses Javascript to show you a Timeline. Please enable Javascript in your browser to see the full page. Thank you.
+				</noscript>
+			</div>
+            <div id="filter" class="controls">
+                <div class="timeline_item">Filter</div><div class="timeline_value" ><input id="timeline_filter_text" type="text" /><input id="timeline_clear_button" type="button" value="Clear" /></div>
+            </div>
+            <div id="date" class="controls">
+                <div class="timeline_item">Date</div><div class="timeline_value" ><input id="timeline_date_text" type="text" /><input id="today_button" type="button" value="Clear" onclick="clearDate();" /></div>
+            </div>
+			
+			<div id="explain" >
+                <p><img src="/img/skyblue-circle.png" border="0" />Finished Task</p>
+                <p><img src="/img/green-circle.png" border="0" />Today's due Task</p>
+                <p><img src="/img/yellow-circle.png" border="0" />Future Task</p>
+			</div>
+		</div>
+        
+        <div id="foot" class="ui-widget ui-widget-content ui-corner-top" >
+            <div>if you have any question, <a href="javascript:void(0);" class="doMethod-open_send_message_dialog-id=sideroad-nickname=sideroad">send message to sideroad</a></div>
+        </div>
+    </body>
+ </html>

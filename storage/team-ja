@@ -1,0 +1,91 @@
+
+            <!-- team dialog -->
+            <div id="team_dialog" class="dialog">
+                <div class="left_line">
+                    <h3>チームリスト</h3>
+                </div>
+                <div id="team_list" class="junk_box ui-widget-content ui-corner-all" >
+                </div>
+                <div class="line">
+                    <input id="open_create_team_dialog_button" type="button" value="作成" class="doMethod-open_create_team_dialog" />
+                    <input type="button" value="閉じる" class="doMethod-close_dialog" />
+                </div>
+            </div>
+            
+            <!-- browse team dialog -->
+            <div id="browse_team_dialog" class="dialog">
+                <div class="item" >
+                    チーム名
+                </div>
+                <div id="browse_team_name" class="longvalue" ></div>
+                <div class="item" >
+                    説明
+                </div>
+                <div id="browse_team_description" class="longvalue" ></div>
+                <div class="item" >
+                    チームアイコン
+                </div>
+                <div class="longvalue" >
+                    <div class="ui-widget-content" style="width:50px;height:50px;" >
+                    <img id="browse_team_image" src="img/team/0.jpg" alt="Team Image" border="0" width="50" height="50" />
+                    </div>
+                </div>
+                <div class="item" >
+                    メンバー
+                </div>
+                <div class="longvalue" >
+                    <div id="browse_team_member_list" class="junk_little_box ui-widget-content ui-corner-all member_list" ></div>
+                </div>
+                <div class="line">
+                    <input id="edit_team_button" type="button" value="変更" />
+                    <input id="delete_team_button" type="button" value="削除" class="delete_team_button" />
+                    <input id="list_team_task_button" type="button" value="タスク一覧" />
+                    <input id="send_team_message_button" type="button" value="チームメッセージを送信" class="send_team_message_button" />
+                    <input type="button" value="閉じる" class="close_button" />
+                </div>
+            </div>
+            
+            <!-- create team dialog -->
+            <div id="create_team_dialog" class="dialog">
+                <div class="item" >
+                    チーム名
+                </div>
+                <div class="longvalue" >
+                    <input id="create_team_name" name="create_team_name" type="text" maxlength="18" title="Input team name. over than 1 length and less than 20 length." />
+                </div>
+                <div class="item" >
+                    説明
+                </div>
+                <div class="longvalue" >
+                    <textarea id="create_team_description" name="create_team_description" ></textarea>
+                </div>
+                <div class="item" >
+                    チームアイコン
+                </div>
+                <div class="longvalue" >
+                    <div class="edit_team"><img id="create_team_image" src="img/team/0.png" alt="Team Image" /></div>
+                    <div class="edit_team"><input id="create_team_image_delete" type="checkbox" value="delete" /><label for="create_team_image_delete" >削除する</label></div>
+                    <div><input id="create_team_image_file" type="file" name="create_team_image_file" title="Select your image. it can be omit" />(省略可)</div>
+                </div>
+                <div class="item" >
+                    メンバー
+                </div>
+                <div class="longvalue" >
+                    <select id="create_team_member" name="create_team_member" class="select_friend" >
+                        <option value="" >-- No Friend --</option>
+                    </select>
+                    <input id="add_friend_button"  type="button" value="追加" class="doMethod-add_team_member" /><br />
+                    <div id="create_team_member_list" class="junk_little_box ui-widget-content ui-corner-all member_list" ></div>
+                </div>
+                <div class="line">
+                    <input id="create_team_button" type="button" value="作成" class="exec-create_team create_team" />
+                    <input id="save_team_button" type="button" value="保存" class="exec-edit_team edit_team" />
+                    <input id="cancel_team_button" type="button" value="キャンセル" class="doMethod-open_team_dialog edit_team" />
+                </div>
+            </div>
+            
+            <!-- default element team -->
+            <div id="default_element_team" class="piece" >
+                <div class="piece_title element_team_name ui-widget-header ui-corner-top" ></div>
+                <div class="piece_image ui-widget-content" ><img src="/img/team/0.png" alt="" width="50" height="50" class="element_team_image" /></div>
+            </div>

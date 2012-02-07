@@ -1,0 +1,22 @@
+<div id="user-load" class="ui-widget-content ui-corner-top ui-corner-br">
+    <div id="user_information_head" class="ui-dialog-titlebar ui-widget-header ui-corner-top">
+        <span class="user_nickname">${nickname}</span>
+    </div>
+    <div id="user_information_left" class="ui-widget ui-widget-content">
+        <img class="user_image" src="img/users/${user_img_seq}.png" alt="User Image" width="100" height="100" />
+    </div>
+    <div id="user_information_right" class="ui-widget ui-widget-content ui-corner-br">
+        <div id="edit_user_div" class="user_operate" data-quark-event="click:user.editDialog" data-quark-ui="authorized" >
+            <img border="0" src="img/edit.png" alt="Edit" />
+        </div>
+        <div id="login_user_div" class="user_operate" data-quark-event="click:user.loginDialog" data-quark-ui="unauthorized" >
+            <img border="0" src="img/login.png" alt="Login" />
+        </div>
+        <div id="logout_user_div" class="user_operate" style="display:none;" data-quark-event="click:user.logout" data-quark-ui="authorized" >
+            <span id="logout_user_span" class="exec-logout_user"><img border="0" src="img/logout.png" alt="Logout" /></span>
+        </div>
+        <div id="timeline_div" class="user_operate">
+            <a id="timeline_a" href="./timeline/"><img border="0" src="img/timeline.png" alt="Timeline" /></a>
+        </div>
+    </div>
+</div>

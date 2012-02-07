@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" href="/clearife/favicon.ico" type="image/vnd.microsoft.icon" />
+        <link rel="icon" href="/clearife/favicon.ico" type="image/vnd.microsoft.icon" />
+        <link rel="stylesheet" type="text/css" href="/css/redmond/jquery-ui-1.7.1.custom.css">
+        <link rel="stylesheet" type="text/css" href="/clearife/css/clearife.css">
+        <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-7694028-4");
+        pageTracker._trackPageview();
+        } catch(err) {}</script>
+        <title>What is clearife?</title>
+    </head>
+    <body>
+        <div id="head" class="ui-widget ui-widget-content ui-corner-bottom" style="height:auto;" >
+            <div id="head_left">
+                <div id="title" >
+                    <h1><a href="/clearife/" ><img border="0" alt="clearife" src="/clearife/img/title.png" /></a></h1>
+                </div>
+            </div>            
+        </div>
+        <div id="body">
+            <div id="explain" class="ui-widget ui-widget-content ui-corner-all">
+	            <h3 class="explain_title" >What is clearife?</h3>
+				<h4 class="explain_title">What is GTD</h4>
+				<div class="explain_content" >
+					デビッド・アレン（David Allen）が提唱したGTD（Getting Things Done）とは個人用のワークフロー管理システムです。
+                    心理的な負担を減らすことを主眼とし、簡単な5つのステップを実行することによって成し遂げたいことを現実にするメソッドです。個人の生産性を向上させることができるとされ、LifeHack（ライフハック）の1つです。基本はなすべき仕事のリストを何かに記録しておくことで、頭の中からなすべき仕事のことを追い出すものです。これで頭の中はすべき仕事全部を覚えなくてもよくなりすっきりとし、リストに基づき実際の仕事をこなすことに集中できます。
+                </div>
+                <h4 class="explain_title" >What is clearife?</h4>
+	            <div class="explain_content" >
+	                GTDを円滑に進めるためのシステムです。<br/>
+					簡素な画面とユーザビリティに配慮した操作性の実現を目指しています。<br />
+	            </div>
+
+                <h3 class="explain_title" >Overview</h3>
+	            <div class="explain_content" >
+                    <a href="clearife.png" target="_blank" >Mind Map(Japanese)</a><br/>
+                    チェックされている項目は実装済み<br/>
+                    ダブルチェックされている項目はSeleniumによりテスト済み<br/>
+                </div>
+
+	            <h3 class="explain_title" >Getting Started</h3>
+	            <h4 class="explain_title" >タスクの作成</h4>
+	            <div class="explain_content" >
+	                現在抱えている仕事、プライベートの予定を全て洗い出します。<br/>
+	                ただし、２分以内で実行できるものは実行し、残りのタスクを作成していきます。<br/>
+	                Newと書いてあるタスクを押すと、タスクを作成できます。<br/>
+	                タスク名、その詳細、開始日、期日を入力し(※1)、「Create」ボタンを押します。<br/>
+	                「Current」または「Future」のボックスにタスクが生成されます。※2<br/><br/>
+	                
+	                ※1詳細、開始日、期日は省略できます。<br/>
+                    ※2開始日が今日の場合「Todo」レーンに生成されます。<br/>
+                    　 開始日が明日の場合「Tomorrow」レーンに生成されます。<br/>
+                    　 開始日が明後日以降の場合「Definite」レーンに生成されます。<br/>
+                    　 開始日が決まっていない場合「Someday」レーンに生成されます。<br/>
+	            </div>
+                
+	            <h4 id="task_help" class="explain_title" >タスクの参照</h4>
+	            <div class="explain_content" >
+	                タスクをダブルクリックすると詳細情報が参照できます。<br/>
+	                また、詳細情報の下に表示されているボタンで各種操作が出来ます。<br/>
+					<table class="explain">
+						<thead></thead>
+						<tbody>
+							<tr>
+								<td>変更</td>
+								<td>タスクの内容を変更できます。<br/>なお、Done,Resultsのタスクに関しては終了日の変更も出来ます。</td>
+							</tr>
+							<tr>
+								<td>削除</td>
+								<td>タスクを削除できます。削除されたタスクはゴミ箱(Trash)に移動します。</td>
+						    </tr>
+							<tr>
+								<td>複製</td>
+								<td>タスクを同じレーンに複製します。</td>
+							</tr>
+							<tr>
+								<td>委譲</td>
+								<td>タスクを友達、若しくはチームのメンバーに委任します。<br/>
+								    チームに属さないタスクは友達のみ委任できます。
+									チームに属すタスクはチームメンバーのみ委任できます。
+								</td>
+							</tr>
+							<tr>
+								<td>Eメール</td>
+								<td>
+									タスクの内容をEメールで送信できます。<br />
+									アドレスの入力欄の右横に表示されている「＠」アイコンをクリックすると、<br />
+									アドレス帳を開くことが出来ます。アドレス帳の操作方法は<a href="#address_book_help" >こちら</a>
+								</td>
+							</tr>
+                        </tbody>
+					</table>
+					
+					ゴミ箱(Trash)のタスクは上記ボタンの代わりに以下のボタンが表示されます。<br/>
+                    <table class="explain">
+                        <thead></thead>
+                        <tbody>
+                            <tr>
+                                <td>元に戻す</td>
+                                <td>タスクを元のレーンに移動します。</td>
+                            </tr>
+                            <tr>
+                                <td>抹消</td>
+                                <td>タスクを抹消します。抹消されたタスクは完全に削除されます。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+	            </div>
+				
+	            <h4 id="box_help" class="explain_title" >ボックスについて</h4>
+	            <div class="explain_content" >
+	                タスクは「Future」,「Current」,「Results」,「Trash」のいずれかのボックスに格納されます。<br/><br/>
+	                <table class="explain" >
+	                    <thead>
+	                        <tr>
+	                            <th>ボックス名</th>
+	                            <th>レーン名</th>
+	                            <th>備考</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+                            <tr>
+                                <td rowspan="3" >Future</td>
+                                <td>Someday</td>
+                                <td>いつ行うか決まっていないタスク</td>
+                            </tr>
+                            <tr>
+                                <td>Definite</td>
+                                <td>開始日が明後日以降のタスク</td>
+                            </tr>
+                            <tr>
+                                <td>Tomorrow</td>
+                                <td>開始日が明日のタスク</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3" >Current</td>
+                                <td>Todo</td>
+                                <td>今日実行すべきタスク<br />
+								    タスクを着手する場合、ドラッグ＆ドロップで「Doing」に移動します。
+								</td>
+                            </tr>
+                            <tr>
+                                <td>Doing</td>
+                                <td>現在実行中のタスク<br />
+                                    タスクが完了した場合、ドラッグ＆ドロップで「Done」に移動します。
+								</td>
+                            </tr>
+                            <tr>
+                                <td>Done</td>
+                                <td>今日完了したタスク<br />
+								    完了した日から一日経つと自動的に「Results」に格納されます。
+								</td>
+                            </tr>
+                            <tr>
+                                <td>Results</td>
+                                <td>Results</td>
+                                <td>昨日以前に完了したタスク</td>
+                            </tr>
+                            <tr>
+                                <td>Routine</td>
+                                <td>Routine</td>
+                                <td>定期的に発生するタスクを管理します。<br />詳細は<a href="#routine_help">こちら</a>を参照してください。</td>
+                            </tr>
+                            <tr>
+                                <td>Trash</td>
+                                <td>Trash</td>
+                                <td>削除されたタスクを格納します。<br />
+								    左側のメニューに表示されているシュレッダーのアイコンをクリックすると、<br />
+									ゴミ箱の全タスクを抹消し、空にします。
+								</td>
+                            </tr>
+	                    </tbody>
+	                </table>
+	            </div>
+                
+                <h4 id="routine_help" class="explain_title" >ルーチンについて</h4>
+                <div class="explain_content" >
+                    ルーチンでは定期的に発生するタスクを登録、変更、削除できます。<br/>
+                </div>
+                
+                <h4 id="team_help" class="explain_title" >チームについて</h4>
+                <div class="explain_content" >
+                    チームで仕事をこなしたり、タスクを友達と共有したり、単にタスクをカテゴライズしたい場合<br/>
+                    チームを登録することで、円滑に共有を行えます。<br />
+                </div>
+                
+                <h4 id="address_book_help" class="explain_title" >アドレス帳について</h4>
+                <div class="explain_content" >
+                    タスクをEメールに送信する際にアドレス帳から選択することが出来ます。<br />
+					アドレス帳を操作するボタンは以下の通りです。
+                    <table class="explain">
+                        <thead></thead>
+                        <tbody>
+                            <tr>
+                                <td>選択する</td>
+                                <td>一つ以上のアドレスを選択し、「選択する」ボタンを押すと、選択したメールアドレスが宛先に設定されます。</td>
+                            </tr>
+                            <tr>
+                                <td>新規登録</td>
+                                <td>新規アドレスを登録します。</td>
+                            </tr>
+                            <tr>
+                                <td>変更する</td>
+                                <td>一つ以上のアドレスを選択し、「変更する」ボタンをクリックすると、選択したアドレスの内容を変更できます。</td>
+                            </tr>
+                            <tr>
+                                <td>削除する</td>
+                                <td>一つ以上のアドレスを選択し、「削除する」ボタンをクリックすると、選択したアドレスを削除できます。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+				
+				
+				
+	        </div>
+        </div>
+        <div id="foot" class="ui-widget ui-widget-content ui-corner-top" >
+            <div>clearife written by sideroad.</div>
+        </div>
+	</body>
+</html>

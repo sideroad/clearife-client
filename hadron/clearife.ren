@@ -1,0 +1,149 @@
+
+        <div id="head" class="ui-widget ui-widget-content ui-corner-bottom" >
+            <div id="head_left">
+                <div id="title" >
+                    <div id="title_img">
+                        <h1><a href="/clearife/" ><img border="0" alt="clearife" src="img/title.png" /></a></h1>
+                    </div>
+                    <div id="help" >
+                        <a href="help.html" target="_blank"><img class="icon_img" border="0" alt="Help"  src="img/help_icon.png"  /></a>
+                    </div>
+                    <div id="narrow_team">
+                        <div>
+                            <select class="narrow_team selectmenu" ><option>Now loading...</option></select>
+                        </div>
+                    </div>
+                </div>
+                <div id="boxes" >
+                    <div class="box_icon_div" ><div id="future_box_a" class="exec-active_box-box=future"  ><img class="icon_img" border="0" alt="Future"  src="img/future_box.png"  /></div></div>
+                    <div class="box_icon_div" ><div id="current_box_a" class="exec-active_box-box=current" ><img class="icon_img" border="0" alt="Current" src="img/current_box.png" /></div></div>
+                    <div class="box_icon_div" ><div id="results_box_a" class="exec-active_box-box=results" ><img class="icon_img" border="0" alt="Results" src="img/results_box.png" /></div></div>
+                    <div class="box_icon_div" ><div id="routine_box_a" class="exec-active_box-box=routine" ><img class="icon_img" border="0" alt="Routine" src="img/routine_box.png" /></div></div>
+                    <div id="trash_div" class="box_icon_div" >
+                        <div id="trash_empty" class="exec-active_box-box=trash icon_link" ><img id="trash_empty_icon" class="icon_img" border="0" alt="Delete Task" src="img/trash.png" /></div>
+                        <div id="trash_full" class="exec-active_box-box=trash icon_link" style="display:none;" ><img id="trash_full_icon" class="icon_img" border="0" alt="Delete Task" src="img/trash_full.png" /></div>
+                    </div>
+                </div>
+            </div>
+            <div id="head_right">
+                <div id="user-load" ></div>
+            </div>
+            
+        </div>
+        <div id="body">
+            <div id="right" class="ui-widget ui-widget-content ui-corner-all">
+                <div class="lane_title ui-dialog-titlebar ui-widget-header ui-corner-all"><span>Menu</span></div>
+                <!-- future menu -->
+                <div id="future_menu" class="menu display_none" >
+                    <div id="future_menu_div" class="icon" >
+                        <div id="future_create_task" class="exec-open_create_task_dialog icon_link" ><img class="icon_img" border="0" alt="Create New Task" src="img/create_task_icon.png" /></div>
+                    </div>
+                </div>
+                
+                <!-- current menu -->
+                <div id="current_menu" class="menu" >
+                    <div id="current_menu_div" class="icon" >
+                        <div id="current_create_task" class="exec-open_create_task_dialog icon_link" ><img class="icon_img" border="0" alt="Create New Task" src="img/create_task_icon.png" /></div>
+                    </div>
+                </div>
+                
+                <!-- results menu -->
+                <div id="results_menu" class="menu display_none" >
+                    <div id="results_menu_div" class="icon" >
+                        <div id="results_create_task" class="exec-open_create_task_dialog icon_link" ><img class="icon_img" border="0" alt="Create New Task" src="img/create_task_icon.png" /></div>
+                    </div>
+                </div>
+                
+                <!-- routine menu -->
+                <div id="routine_menu" class="menu display_none" >
+                    <div id="routine_menu_div" class="icon" >
+                        <div id="create_routine" class="exec-open_create_routine_dialog icon_link" ><img class="icon_img" border="0" alt="Create New Routine" src="img/create_routine_icon.png" /></div>
+                    </div>
+                </div>
+                
+                <!-- trash menu -->
+                <div id="trash_menu" class="menu display_none" >
+                    <div id="erase_div" class="icon" >
+                        <div id="erase_span" class="doRequest-erase_trash icon_link" ><img id="erase_icon" class="icon_img" border="0" alt="Erase trash" src="img/shredder.png" /></div>
+                    </div>
+                </div>
+                
+                <!-- common menu -->
+                <div id="common_menu" class="common_menu" >
+                    <div id="common_menu_div" class="icon" >
+                        <div class="ui-widget-content" style="border-width: 3px;clear:both;float:left;width:100px;height:0px" ></div>
+                        <div id="list_task" class="exec-list_task icon_link" ><img class="icon_img" border="0" alt="View Task List" src="img/list_task.png" /></div>
+                        <div id="friend_a" class="exec-open_friend_dialog icon_link" ><img id="friend_icon" class="icon_img" border="0" alt="Friend" src="img/friend.png" /></div>
+                        <div id="team_a" class="exec-open_team_dialog icon_link" ><img id="team_icon" class="icon_img" border="0" alt="Team" src="img/team_icon.png" /></div>
+                        <div id="message_span" class="exec-open_message_box_dialog icon_link" ><img id="message_icon" class="icon_img" border="0" alt="Message" src="img/message_icon.png" /></div>
+                    </div>
+                </div>
+            </div>
+            <div id="main">
+                <!-- future box-->
+                <div id="future_box" class="box display_none">
+                    <div id="someday_lane" class="lane exec-active_lane-lane=someday_lane ui-widget ui-widget-content ui-corner-all" >
+                        <div class="lane_title ui-dialog-titlebar ui-widget-header ui-corner-top"><span>Someday</span></div>
+                        <div id="task-someday" class="lane_contents" ></div>
+                    </div>
+                    <div id="definite_lane" class="lane exec-active_lane-lane=definite_lane ui-widget ui-widget-content ui-corner-all" >
+                        <div class="lane_title ui-dialog-titlebar ui-widget-header ui-corner-top"><span>Definite</span></div>
+                        <div id="task-definite" class="lane_contents" ></div>
+                    </div>
+                    <div id="tomorrow_lane" class="lane exec-active_lane-lane=tomorrow_lane ui-widget ui-widget-content ui-corner-all" >
+                        <div class="lane_title ui-dialog-titlebar ui-widget-header ui-corner-top"><span>Tomorrow</span></div>
+                        <div id="task-tomorrow" class="lane_contents" ></div>
+                    </div>
+                </div>
+                
+                <!-- current box-->
+                <div id="current_box" class="box" >
+                    <div id="todo_lane" class="lane exec-active_lane-lane=todo_lane ui-widget ui-widget-content ui-corner-all">
+                        <div class="lane_title ui-dialog-titlebar ui-widget-header ui-corner-top"><span>To Do</span></div>
+                        <div id="task-todo" class="lane_contents" data-quark-event="drop:task.move" ></div>
+                    </div>
+                    <div id="doing_lane" class="lane exec-active_lane-lane=doing_lane ui-widget ui-widget-content ui-corner-all">
+                        <div class="lane_title ui-dialog-titlebar ui-widget-header ui-corner-top">Doing</div>
+                        <div id="task-doing" class="lane_contents" data-quark-event="drop:task.move" ></div>
+                    </div>
+                    <div id="done_lane" class="lane exec-active_lane-lane=done_lane ui-widget ui-widget-content ui-corner-all">
+                        <div class="lane_title ui-dialog-titlebar ui-widget-header ui-corner-top">Done</div>
+                        <div id="task-done" class="lane_contents" data-quark-event="drop:task.move" ></div>
+                    </div>
+                </div>
+                
+                <!-- results box-->
+                <div id="results_box" class="box display_none">
+                    <div id="results_lane" class="wide_lane ui-widget ui-widget-content ui-corner-all" >
+                        <div class="lane_title ui-dialog-titlebar ui-widget-header ui-corner-top"><span>Results</span></div>
+                        <div id="task-results" class="lane_contents"></div>
+                    </div>
+                </div>
+                
+                <!-- routine box-->
+                <div id="routine_box" class="box display_none">
+                    <div id="routine_lane" class="wide_lane ui-widget ui-widget-content ui-corner-all" >
+                        <div class="lane_title ui-dialog-titlebar ui-widget-header ui-corner-top"><span>Routine</span></div>
+                        <div id="routine" class="lane_contents"></div>
+                    </div>
+                </div>
+                
+                <!-- trash box -->
+                <div id="trash_box" class="box display_none">
+                    <div id="trash_lane" class="wide_lane ui-widget ui-widget-content ui-corner-all" >
+                        <div class="lane_title ui-dialog-titlebar ui-widget-header ui-corner-top"><span>Trash</span></div>
+                        <div id="task-trash" class="lane_contents"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="foot" class="ui-widget ui-widget-content ui-corner-top" >
+            <div>if you have any question, <a href="javascript:void(0);" class="exec-open_send_message_dialog-id=sideroad-nickname=sideroad">send message to sideroad</a></div>
+            <div>Language : <a href="javascript:void(0);" class="exec-set_language-lang=en">English</a> , <a href="javascript:void(0);" class="exec-set_language-lang=ja">Japanese</a></div>
+        </div>
+        
+        <!-- Include the VML behavior -->
+        <style>v\:image { behavior:url(#default#VML); display:inline-block }</style>
+        <!-- Declare the VML namespace -->
+        <xml:namespace ns="urn:schemas-microsoft-com:vml" prefix="v" />

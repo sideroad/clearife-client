@@ -1,0 +1,31 @@
+
+h1{
+	font-size:30pt;
+	margin:15px;
+}
+
+#timeline_container{
+    margin: 5px 0px;
+}
+
+#explain {
+    margin: 20px;
+}
+
+div.controls {
+	width:400px;
+	height:10px;
+	margin:20px;
+}
+
+div.timeline_item {
+	float:left;
+	clear:both;
+    width : 40px;
+}
+
+div.timeline_value{
+    float:left;
+    width : 250px;
+	
+}    

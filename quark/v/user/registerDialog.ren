@@ -1,0 +1,32 @@
+<!-- register user dialog -->
+<div id="user-registerDialog">
+    <form id="user-register-form">
+        <div class="item">
+            UserID
+        </div>
+        <div class="value">
+            <input id="register_user_id" name="user_id" type="text" style="ime-mode:disabled" title="Only letter , numbers are allowed.<br />over than 4 length and less than 10 length." />
+        </div>
+        <div class="item">
+            Email
+        </div>
+        <div class="value">
+            <input id="register_user_address" name="user_address" type="text" title="Input your mailaddress.<br />System will send mail to your address for register , when you success to temporary register." class="verylongtext" />
+        </div>
+        <div class="item">
+            Password
+        </div>
+        <div class="value">
+            <input id="register_user_password" name="user_password" type="password" style="ime-mode:disabled" title="Over than 4 length and less than 16 length." />
+        </div>
+        <div class="item">
+            Re-type Password
+        </div>
+        <div class="value">
+            <input id="register_user_repassword" name="user_repassword" type="password" style="ime-mode:disabled" title="Over than 4 length and less than 16 length." />
+        </div>
+        <div class="line">
+            <input id="register_user_button" type="button" value="Create My Account" data-quark-event="click:user.register:form" /><input type="button" value="Cancel" data-quark-event="click:user.closeRegisterDialog" />
+        </div>
+    </form>
+</div>

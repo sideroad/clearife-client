@@ -1,0 +1,8 @@
+<!-- default element user -->
+<div id="default_element_user" class="piece">
+    <div class="piece_title element_user_nickname ui-widget-header ui-corner-top">
+    </div>
+    <div class="piece_image ui-widget-content">
+        <img src="/img/users/0.png" alt="" width="50" height="50" class="element_user_image" />
+    </div>
+</div>

@@ -1,0 +1,572 @@
+@font-face {
+  font-family: 'APJapanesefont';
+  font-style: normal;
+  font-weight: normal;
+  src: local('APJapanesefont'), url('/css/fonts/APJapanesefont.ttf') format('truetype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 5px;
+}
+
+textarea {
+    height: 120px;
+    width: 250px;
+}
+
+div.longvalue textarea {
+    height: 200px;
+    width: 350px;
+}
+
+body {
+    width: 850px;
+    margin: 0px auto;
+    font-size:9pt;
+    padding: 0px;
+    font-family:"Reenie Beanie", "APJapanesefont";
+}
+
+.ui-widget {
+    font-family:"Reenie Beanie", "APJapanesefont";
+    font-weight:bold;
+    font-size:1.25em;
+}
+
+div#title_img {
+    float: left;
+}
+
+div#help {
+    float: right;
+}
+
+div#narrow_team {
+	margin:23px;
+    float: right;
+	height : 2em;
+}
+
+div#narrow_team div{
+    height : 1.1em;
+}
+
+div#head {
+    float: left;
+    clear: both;
+    width: 100%;
+    height: 180px;
+}
+
+div#head_left {
+    float: left;
+    clear: both;
+    width: 600px;
+    height: 100%;
+}
+
+div#head_right {
+    float: left;
+    width: 250px;
+    height: 100%;
+}
+
+div#body {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div#foot {
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+
+div#title {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.placeholder {
+    outline: 2px dashed #fff;
+}
+
+input {
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+input[type ='text'] {
+    width: 100px;
+    font-family: "Reenie Beanie","APJapanesefont";
+}
+
+input.longtext {
+    width: 220px;
+    font-family: "Reenie Beanie","APJapanesefont";
+}
+
+input.mailAddress {
+    width: 280px;
+    font-family: "Reenie Beanie","APJapanesefont";
+}
+
+input.hasDatepicker {
+    text-align: center;
+    width: 85px;
+    font-size: 1.4em;
+    font-family: "Reenie Beanie","APJapanesefont";
+}
+
+input.verylongtext {
+    width: 300px;
+    font-family: "Reenie Beanie","APJapanesefont";
+}
+
+a.button {
+    padding: 0.4em 1em 0.4em 20px;
+    text-decoration: none;
+}
+
+#right {
+    float: left;
+    width: 150px;
+    height: 600px;
+    margin-right: 10px;
+}
+
+#main {
+    float: left;
+    width: 675px;
+    height: 600px;
+    margin-left: 10px;
+}
+
+div.display_none {
+    display: none;
+}
+
+div.lane {
+    float: left;
+    width: 120px;
+    height: 100%;
+}
+
+div#todo_lane {
+    width: 420px;
+}
+
+div#someday_lane {
+    width: 420px;
+}
+
+div.wide_lane {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+div.box_icon_div:first-child {
+    clear: both;
+}
+
+div.box_icon_div, div.icon_link {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0px 5px;
+    padding: auto;
+    text-align: center;
+}
+
+div.lane_title {
+    height: 40px;
+    font-size: 2.0em;
+    padding-top: 10px;
+    text-align: center;
+}
+
+div.lane_contents {
+    height: 550px;
+    overflow: auto;
+}
+
+div.item, div.longitem {
+    float: left;
+    clear: both;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-family: "Reenie Beanie","APJapanesefont";
+}
+
+div.longitem {
+    width: 200px;
+}
+
+div.value, div.longvalue {
+    width: 250px;
+    float: left;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-family: "Reenie Beanie","APJapanesefont";
+}
+div.value select, div.longvalue select, div.line select, div.center_line select
+div.value input, div.longvalue input, div.line input, div.center_line input {
+    font-family: "Reenie Beanie","APJapanesefont";
+}
+
+div.longvalue {
+    width: 400px;
+}
+
+div.value2column {
+    float: left;
+    width: 40%;
+    font-size: 1.1em;
+}
+
+div.line {
+    float: left;
+    clear: both;
+    width: 90%;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+div.left_line {
+    float: left;
+    clear: both;
+    width: 90%;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+div.center_line {
+    float: left;
+    clear: both;
+    width: 90%;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+div.task, div.routine {
+	background-color: #66FF66;
+    background-image: -moz-linear-gradient(right center , #BBFFBB, #66FF66);
+    background-image: -webkit-gradient(linear,left top,right bottom,color-stop(0, #BBFFBB),color-stop(1, #66FF66));
+    float: left;
+    width: 140px;
+    height: 45px;
+    margin: 15px;
+    overflow: hidden;
+    padding: 5px;
+    font-size: 13pt;
+    font-weight: bold;
+    position: relative;
+    -moz-transform: rotate(2.5deg);  /* FF3.5+ */
+    -o-transform: rotate(2.5deg);  /* Opera 10.5 */
+    -webkit-transform: rotate(2.5deg);  /* Saf3.1+, Chrome */
+    -moz-box-shadow: 4px 2px 3px #999999; /* FF3.5+ */
+    -webkit-box-shadow: 4px 2px 3px #999999; /* Saf3.0+, Chrome */
+    box-shadow: 4px 2px 3px #999999; /* Opera 10.5, IE 9.0 */
+
+}
+
+div.task:hover, div.routine:hover {
+    -moz-transform:rotate(5deg);
+}
+
+
+div.mini {
+    width: 70px;
+	font-size:10pt;
+}
+
+div.green {
+    background-color: #66FF66;
+    background-image: -moz-linear-gradient(right center , #66FF66 ,#BBFFBB );
+    background-image: -webkit-gradient(linear,left top,right bottom,color-stop(0, #BBFFBB),color-stop(1, #66FF66));
+}
+
+div.red {
+    background-color: #FF6666;
+    background-image: -moz-linear-gradient(right center , #FF6666, #FFBBBB );
+    background-image: -webkit-gradient(linear,left top,right bottom,color-stop(0, #FFBBBB),color-stop(1, #FF6666));
+}
+
+div.yellow {
+    background-color: #FFFF66;
+    background-image: -moz-linear-gradient(right center , #FFFF66, #FFFFBB );
+    background-image: -webkit-gradient(linear,left top,right bottom,color-stop(0, #FFFFBB),color-stop(1, #FFFF66));
+}
+
+div.purple {
+    background-color: #7F7FFF;
+    background-image: -moz-linear-gradient(right center , #7F7FFF , #BBBBFF);
+    background-image: -webkit-gradient(linear,left top,right bottom,color-stop(0, #BBBBFF),color-stop(1, #7F7FFF));
+}
+
+div.skyblue {
+    background-color: #66FFFF;
+    background-image: -moz-linear-gradient(right center , #66FFFF, #BBFFFF );
+    background-image: -webkit-gradient(linear,left top,right bottom,color-stop(0, #BBFFFF),color-stop(1, #66FFFF));
+}
+
+div.orange {
+    background-color: #FFA666;
+    background-image: -moz-linear-gradient(right center , #FFA666, #FFFBBB );
+    background-image: -webkit-gradient(linear,left top,right bottom,color-stop(0, #FFFBBB),color-stop(1, #FFA666));
+}
+
+
+div.ui-selected {
+    border: 3px dotted gray;
+    margin: 12px;
+}
+
+div.title {
+    position: absolute;
+    padding-right: 5px;
+    margin-right: 5px;
+    color: #333333;
+    height: 45px;
+    overflow: hidden;
+    -moz-transform: rotate(-2.5deg);  /* FF3.5+ */
+    -o-transform: rotate(-2.5deg);  /* Opera 10.5 */
+    -webkit-transform: rotate(-2.5deg);  /* Saf3.1+, Chrome */
+	font-family:"Reenie Beanie", "APJapanesefont";
+}
+
+div.team_image {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0.7;
+}
+
+div.more {
+    float: left;
+    margin: 15px;
+    width: 150px;
+    height: 51px;
+}
+
+div.routine {
+    background-position: 100% -220px;
+}
+
+div.icon {
+    padding: 0px 15px;
+}
+
+div.icon_link {
+    clear: both;
+    text-decoration: none;
+    cursor: hand;
+}
+
+div#explain {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.explain_content {
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    line-height: 230%;
+}
+
+h3.explain_title {
+    border-top: 2px solid #FFAFD0;
+    border-left: 2px solid #FFAFD0;
+    margin: 10px;
+    color: #5379DF
+}
+
+h4.explain_title {
+    border: 1px dashed #FFAFD0;
+    margin: 10px 20px;
+    color: #5379DF
+}
+
+table.explain {
+    margin: 10px;
+    border: 2px solid #3FBBFF;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table.explain th {
+    border-right: 1px solid #3FBBFF;
+    border-bottom: 1px solid #3FBBFF;
+    background-position: left top;
+    padding: 0.3em 1em;
+    text-align: center;
+}
+
+table.explain td {
+    border-right: 1px solid #3FBBFF;
+    border-bottom: 1px solid #3FBBFF;
+    padding: 0.3em 1em;
+}
+
+div#ui-datepicker-div {
+    z-index: 5000;
+}
+
+div#storage {
+    display: none;
+}
+
+div#user_information {
+    width: 202px;
+    height: 129px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+div#user_information_head {
+    text-align: center;
+    float: left;
+    clear: both;
+    width: 200px;
+    height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+div#user_information_left {
+    float: left;
+    clear: both;
+    width: 100px;
+    height: 100px;
+}
+
+div#user_information_right {
+    float: left;
+    width: 98px;
+    height: 100px;
+}
+
+div.user_operate {
+    float: left;
+    margin: 4px;
+    width: 100%;
+    height: 25px;
+}
+
+div.junk_box {
+    clear: both;
+    float: left;
+    height: 200px;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 25px;
+    overflow: auto;
+}
+
+div.junk_little_box {
+    clear: both;
+    float: left;
+    height: 100px;
+    width: 90%;
+    margin-top: 5px;
+    overflow: auto;
+}
+
+div.hr {
+    clear: both;
+    float: left;
+    border: 2px solid gray;
+    width: 100%;
+    height: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.piece {
+    float: left;
+    height: 66px;
+    width: 52px;
+    margin: 8px;
+}
+
+div.piece_title {
+    overflow: hidden;
+    height: 14px;
+    font-size: 1.0em;
+    text-align: center;
+    font-weight: normal;
+}
+
+div.browse_user_image {
+    clear: both;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+div.browse_user_profile {
+    float: left;
+    width: 200px;
+    height: 80px;
+    padding: 10px;
+    text-align: left;
+}
+
+div#browse_message_message {
+    width: 518px;
+    height: 250px;
+    padding: 15px;
+    overflow: auto;
+}
+
+tr.bold {
+    font-weight: bold;
+}
+
+div.fbutton .delete {
+    background: transparent url(../img/fdelete.png) no-repeat scroll left center;
+}
+
+div.fbutton .replicate {
+    background: transparent url(../img/freplicate.png) no-repeat scroll left center;
+}
+
+div.fbutton .browse {
+    background: transparent url(../img/fbrowse.png) no-repeat scroll left center;
+}
+
+div.fbutton .edit {
+    background: transparent url(../img/fedit.png) no-repeat scroll left center;
+}
+
+div.fbutton .add {
+    background: transparent url(../img/fadd.png) no-repeat scroll left center;
+}
+
+div.fbutton .select {
+    background: transparent url(../img/fselect.png) no-repeat scroll left center;
+}
+
+div.fbutton .reply {
+    background: transparent url(../img/freply.png) no-repeat scroll left center;
+}
