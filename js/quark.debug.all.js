@@ -10883,6 +10883,11 @@ var hadron = { },
 						
 					});
 					
+					// Draggable 
+					root.find("[draggable]").each(function(){
+					   $(this).wrap('<a style="text-decoration:none;cursor:move;" href="javascript:void(0);"></a>'); 
+					});
+					
 					// Util attach
 					if (quark.util) {
 						quark.util.attach(root, config);
@@ -10933,7 +10938,7 @@ var hadron = { },
          * Attach event by user interaction
          */
 		dom : function interaction( ){
-            var types = [ "click", "change", "keydown", "dragstart", "dragenter", "drop", "dragover" ],
+            var types = [ "click", "dblclick", "change", "keydown", "dragstart", "dragenter", "drop", "dragover" ],
                 length = types.length,
                 doc = $( document.body ),
                 i;
@@ -10942,11 +10947,7 @@ var hadron = { },
                 doc.bind(types[ i ],function( e ){
                     var elem = $(e.target),
                         parents = elem.parents("[data-quark-event]");
-						
-                    if( e.type == "dragover"){
-                        if (e.preventDefault) e.preventDefault(); // allows us to drop
-                    }
-                    
+					
                     $( [ elem, parents ] ).each( function(){
                         var elem = $(this),
                             events = ( elem.data("quarkEvent") || "" ).replace(/\s/,"").split(",") || [],
@@ -10963,7 +10964,6 @@ var hadron = { },
                         for( i = 0; i < length; i++ ) {
                             event = events[ i ];
                             matches = event.match( reg )||[];
-							console.log(type);
                             if( type == matches[ 1 ] ) {
                                 call( matches[ 2 ], null, elem );
                             }
@@ -10971,6 +10971,14 @@ var hadron = { },
                     });
                 });
             }
+            
+            doc.bind("dragover", function(e){
+                var org = e.originalEvent;
+                if (org.preventDefault) org.preventDefault(); // allows us to drop
+            }).bind("drop", function(e){
+                var org = e.originalEvent;
+                if (org.stopPropagation) org.stopPropagation(); // stops the browser from redirecting...why???
+            });
         },
 		
 		hash : function(){
